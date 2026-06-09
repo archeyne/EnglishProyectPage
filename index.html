@@ -877,13 +877,13 @@
         </h3>
 
         <!-- Carousel Container -->
-        <div class="relative overflow-hidden w-full px-2 sm:px-12 py-4">
+        <div class="relative overflow-hidden w-full max-w-3xl mx-auto px-2 sm:px-12 py-4">
 
           <!-- Track -->
           <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out gap-6 w-full">
 
             <!-- Student 1 -->
-            <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] flex-shrink-0 bg-white rounded-2xl border border-stone-200/80 p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full min-w-full flex-shrink-0 bg-white rounded-2xl border border-stone-200/80 p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
               <div class="space-y-4">
                 <!-- Video Embed -->
                 <div class="w-full h-[200px] rounded-xl overflow-hidden bg-black border border-stone-100 shadow-inner">
@@ -905,7 +905,7 @@
             </div>
 
             <!-- Student 2 -->
-            <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] flex-shrink-0 bg-white rounded-2xl border border-stone-200/80 p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full min-w-full flex-shrink-0 bg-white rounded-2xl border border-stone-200/80 p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
               <div class="space-y-4">
                 <!-- Video Embed -->
                 <div class="w-full h-[200px] rounded-xl overflow-hidden bg-black border border-stone-100 shadow-inner">
@@ -927,7 +927,7 @@
             </div>
 
             <!-- Student 3 -->
-            <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] flex-shrink-0 bg-white rounded-2xl border border-stone-200/80 p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full min-w-full flex-shrink-0 bg-white rounded-2xl border border-stone-200/80 p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
               <div class="space-y-4">
                 <!-- Video Embed -->
                 <div class="w-full h-[200px] rounded-xl overflow-hidden bg-black border border-stone-100 shadow-inner">
@@ -949,7 +949,7 @@
             </div>
 
             <!-- Student 4 -->
-            <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] flex-shrink-0 bg-white rounded-2xl border border-stone-200/80 p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full min-w-full flex-shrink-0 bg-white rounded-2xl border border-stone-200/80 p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
               <div class="space-y-4">
                 <!-- Video Embed -->
                 <div class="w-full h-[200px] rounded-xl overflow-hidden bg-black border border-stone-100 shadow-inner">
@@ -971,7 +971,7 @@
             </div>
 
             <!-- Student 5 -->
-            <div class="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] flex-shrink-0 bg-white rounded-2xl border border-stone-200/80 p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-full min-w-full flex-shrink-0 bg-white rounded-2xl border border-stone-200/80 p-5 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
               <div class="space-y-4">
                 <!-- Video Embed -->
                 <div class="w-full h-[200px] rounded-xl overflow-hidden bg-black border border-stone-100 shadow-inner">
@@ -1762,9 +1762,7 @@
 
     // Determine slides count based on viewport width
     function getSlidesPerPage() {
-      if (window.innerWidth >= 1024) return 3; // Desktop
-      if (window.innerWidth >= 768) return 2;  // Tablet
-      return 1;                                // Mobile
+      return 1;
     }
 
     function updateCarouselPosition() {
