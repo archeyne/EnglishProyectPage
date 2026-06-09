@@ -11,7 +11,7 @@ try:
     
     # 2. Filter for just JPG/JPEG images and sort them 
     # Sorting ensures they are numbered in a predictable order (alphabetical/numerical)
-    image_files = [f for f in all_files if f.lower().endswith(('.jpg', '.jpeg'))]
+    image_files = [f for f in all_files if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
     image_files.sort()
     
     total_images = len(image_files)
