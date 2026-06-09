@@ -855,112 +855,18 @@
         <div class="h-1 w-16 bg-ecoPrimary mx-auto mt-4 rounded-full"></div>
       </div>
 
-      <!-- Part 1: Expert Interviews (3 Cards) -->
+      <!-- Part 1: Project Documentary -->
       <div class="mb-16">
-        <h3 class="text-2xl font-bold text-ecoDeep font-heading mb-6 border-l-4 border-ecoPrimary pl-3">
-          Expert Interviews / <span class="italic text-stone-500 text-sm font-normal">Entrevistas de Expertos</span>
+        <h3 class="text-2xl font-bold text-ecoDeep font-heading mb-4 border-l-4 border-ecoPrimary pl-3">
+          Project Documentary / <span class="italic text-stone-500 text-sm font-normal">Documental del Proyecto</span>
         </h3>
-        <p class="text-sm text-stone-500 mb-6 max-w-xl">
-          Hear from UNAL academic leaders and waste specialists detailing the pedagogical logic of bilingual recycling
-          integrations.
+        <p class="text-sm text-stone-500 mb-8 max-w-2xl">
+          Watch the final audiovisual documentary showing the active recycling behaviors, student workflows, and expert views on the green transformation at the UNAL campus.
         </p>
 
-        <!-- 3 Cards for Videos / Audio. Can load local folder media easily -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-          <!-- Expert Card 1 -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md group">
-            <div class="relative bg-stone-900 h-48 flex items-center justify-center">
-              <!-- Mock Video Thumbnail (User can replace src with local videos or files) -->
-              <div
-                class="absolute inset-0 bg-cover bg-center opacity-60 filter blur-[1px] group-hover:scale-105 transition-transform duration-500"
-                style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=400&q=80')">
-              </div>
-
-              <!-- Video / Audio Player controls -->
-              <video id="expert-video-1" class="absolute inset-0 w-full h-full object-cover hidden" controls>
-                <source src="./assets/videos/expert_interview1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-
-              <button onclick="toggleVideoPlayback('expert-video-1', this)"
-                class="relative z-10 w-16 h-16 rounded-full bg-ecoPrimary hover:bg-ecoDeep text-white flex items-center justify-center text-xl shadow-lg transition-transform duration-300 transform group-hover:scale-110">
-                <i class="fa-solid fa-play ml-1"></i>
-              </button>
-
-              <span
-                class="absolute bottom-3 left-3 bg-black/60 text-white text-xs px-2 py-0.5 rounded font-mono">02:45</span>
-            </div>
-
-            <div class="p-6">
-              <span class="text-[10px] font-bold text-ecoRust uppercase tracking-wider">UNAL Agronomy Faculty /
-                <em>Facultad de Agronomía</em></span>
-              <h4 class="font-extrabold text-ecoDeep text-base mt-1">Prof. Elena Restrepo</h4>
-              <p class="text-xs text-stone-500 italic">"Integrating English vocabulary inside active greenhouse settings
-                builds spatial associations that accelerate student fluency."</p>
-            </div>
-          </div>
-
-          <!-- Expert Card 2 -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md group">
-            <div class="relative bg-stone-900 h-48 flex items-center justify-center">
-              <div
-                class="absolute inset-0 bg-cover bg-center opacity-60 filter blur-[1px] group-hover:scale-105 transition-transform duration-500"
-                style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80')">
-              </div>
-
-              <video id="expert-video-2" class="absolute inset-0 w-full h-full object-cover hidden" controls>
-                <source src="./assets/videos/expert_interview2.mp4" type="video/mp4">
-              </video>
-
-              <button onclick="toggleVideoPlayback('expert-video-2', this)"
-                class="relative z-10 w-16 h-16 rounded-full bg-ecoPrimary hover:bg-ecoDeep text-white flex items-center justify-center text-xl shadow-lg transition-transform duration-300 transform group-hover:scale-110">
-                <i class="fa-solid fa-play ml-1"></i>
-              </button>
-
-              <span
-                class="absolute bottom-3 left-3 bg-black/60 text-white text-xs px-2 py-0.5 rounded font-mono">03:12</span>
-            </div>
-
-            <div class="p-6">
-              <span class="text-[10px] font-bold text-ecoRust uppercase tracking-wider">Campus Environmental Office /
-                <em>Oficina Ambiental</em></span>
-              <h4 class="font-extrabold text-ecoDeep text-base mt-1">Ing. Carlos Mendoza</h4>
-              <p class="text-xs text-stone-500 italic">"Bilingual signboards help clear up sorting doubts. Breaking
-                language barriers makes recycling a more conscious action."</p>
-            </div>
-          </div>
-
-          <!-- Expert Card 3 -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-md group">
-            <div class="relative bg-stone-900 h-48 flex items-center justify-center">
-              <div
-                class="absolute inset-0 bg-cover bg-center opacity-60 filter blur-[1px] group-hover:scale-105 transition-transform duration-500"
-                style="background-image: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=400&q=80')">
-              </div>
-
-              <video id="expert-video-3" class="absolute inset-0 w-full h-full object-cover hidden" controls>
-                <source src="./assets/videos/expert_interview3.mp4" type="video/mp4">
-              </video>
-
-              <button onclick="toggleVideoPlayback('expert-video-3', this)"
-                class="relative z-10 w-16 h-16 rounded-full bg-ecoPrimary hover:bg-ecoDeep text-white flex items-center justify-center text-xl shadow-lg transition-transform duration-300 transform group-hover:scale-110">
-                <i class="fa-solid fa-play ml-1"></i>
-              </button>
-
-              <span
-                class="absolute bottom-3 left-3 bg-black/60 text-white text-xs px-2 py-0.5 rounded font-mono">01:58</span>
-            </div>
-
-            <div class="p-6">
-              <span class="text-[10px] font-bold text-ecoRust uppercase tracking-wider">Academic Language Department /
-                <em>Departamento de Idiomas</em></span>
-              <h4 class="font-extrabold text-ecoDeep text-base mt-1">Dr. Sandra Giraldo</h4>
-              <p class="text-xs text-stone-500 italic">"Task-based English combined with direct sustainability efforts
-                represents modern, functional content teaching at its best."</p>
-            </div>
-          </div>
-
+        <!-- Premium Responsive YouTube Embed -->
+        <div class="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-black aspect-video relative transform hover:scale-[1.01] transition-transform duration-300">
+          <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/TB2UYkcceMQ" title="A Green Campus - UNAL Documentary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -1943,30 +1849,6 @@
     window.addEventListener('resize', updateCarouselPosition);
     // Init carousel positioning
     setTimeout(updateCarouselPosition, 300);
-
-
-    // ---------------------------------------------------------
-    // Expert Videos Playback Toggler
-    // ---------------------------------------------------------
-    function toggleVideoPlayback(videoId, buttonEl) {
-      const video = document.getElementById(videoId);
-
-      // Toggle visibility of the HTML5 video tag vs mock thumbnail overlay
-      if (video.classList.contains('hidden')) {
-        video.classList.remove('hidden');
-        video.play();
-        buttonEl.innerHTML = '<i class="fa-solid fa-pause"></i>';
-        buttonEl.classList.add('bg-ecoRust');
-      } else {
-        if (video.paused) {
-          video.play();
-          buttonEl.innerHTML = '<i class="fa-solid fa-pause"></i>';
-        } else {
-          video.pause();
-          buttonEl.innerHTML = '<i class="fa-solid fa-play ml-1"></i>';
-        }
-      }
-    }
 
 
     // ---------------------------------------------------------
